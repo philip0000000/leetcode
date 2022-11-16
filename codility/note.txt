@@ -2,10 +2,13 @@ https://app.codility.com/programmers/
 ===( codility )===
 
 
----1-iterations---
+---lessons---
 https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 
 
+
+---trainings---
+https://app.codility.com/programmers/trainings/
 
 
 
