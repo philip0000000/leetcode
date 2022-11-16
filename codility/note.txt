@@ -12,3 +12,18 @@ https://app.codility.com/programmers/trainings/
 
 
 
+
+
+
+
+var Found = new System.Collections.Generic.List<int>();
+Found.Add(A[n]);
+
+
+var Dic = new System.Collections.Generic.Dictionary<int, int>();
+Dic.Add(n, 1);
+foreach(var item in Dic)
+{
+    if (item.Value == 1)
+        return item.Key;
+}
