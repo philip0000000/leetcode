@@ -1,6 +1,7 @@
 /**************/
 /*** O(n^2) ***/
 /**************/
+using System;
 class Solution {
     public int solution(int[] A) {
         // write your code in C# 6.0 with .NET 4.7 (Mono 6.12)
@@ -26,7 +27,7 @@ class Solution {
 
         return -1;
     }
-}*/
+}
 
 /****************/
 /*** O(nlogn) ***/
