@@ -29,7 +29,7 @@ class Solution {
                 // 1st calculat if it is bigger
                 if (InvalidPassword == false && // contain only alphanumerical characters
                     NumLetters % 2 == 0 &&      // even number of letters
-                    NumDigits % 2 != 0)        // odd number of digits
+                    NumDigits % 2 != 0)         // odd number of digits
                     if ((NumLetters + NumDigits) > ret)
                         ret = (NumLetters + NumDigits);
 
