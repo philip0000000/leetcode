@@ -1,0 +1,52 @@
+// recursion exponential
+public class Solution {
+    public int MaxProfit(int[] prices) {
+        int ret = 0; // 0 is default
+        int h = 0;
+
+        for (int n = 0, m = prices.Length; n < m; n++)
+        {
+            for (int b = n+1; b < m; b++)
+            {
+                if (prices[b] > h)
+                {
+                    if (prices[b] - prices[n] > ret)
+                    {
+                        ret = prices[b] - prices[n];
+                    }
+                    h = prices[b];
+                }
+            }
+            h = 0;
+        }
+
+        return ret;
+    }
+}
+
+// dynamic programming linear
+public class Solution {
+    public int MaxProfit(int[] prices) {
+        int index=Int32.MaxValue;
+        int profit=0;
+        int highest = 0;
+       
+	    foreach (int n in prices)
+        {
+            if (n < index)
+            {
+                index = n;
+                highest = 0;
+            }
+            
+            if (n > highest)
+            {
+                if (n - index > profit)
+                    profit = n - index;
+                highest = n;
+            }
+        }
+
+        return profit;
+    }
+}
