@@ -1,0 +1,34 @@
+===( Introduction to Dynamic Programming 1 )===
+(https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/)
+ * core idea of Dynamic Programming is to avoid repeated work by remembering partial results
+
+ * Dynamic Programming is a technique that allows one to solve problems in time O(n2) or O(n3) for which a naive approach would take exponential time
+
+---( Dynamic Programming and Recursion )---
+Dynamic programming == recursion + common sense
+
+ * The intuition behind dynamic programming is that we trade space for time
+
+ * Most Dynamic Programming problems can be categorized into two types:
+1. Optimization problems
+The optimization problems expect you to select a feasible solution, so that the value of the required function is minimized or maximized
+2. Combinatorial problems
+Combinatorial problems expect you to figure out the number of ways to do something, or the probability of some event happening.
+
+
+
+Dynamic Programming problem schema can be followed as:
+ * Show that the problem can be broken down into optimal sub-problems.
+ * Recursively define the value of the solution by expressing it in terms of optimal solutions for smaller sub-problems.
+ * Compute the value of the optimal solution in bottom-up fashion.
+ * Construct an optimal solution from the computed information.
+
+!!!
+ * you have to come up with an ordering of a solution which works
+!!!
+
+
+
+
+
+
