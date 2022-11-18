@@ -11,9 +11,7 @@ public class Solution {
                 n0 = n0 + n1;
         }
 
-        if (n0 > n1)
-            return n0;
-        return n1;
+        return n0 > n1 ? n0 : n1;
     }
 }
 
