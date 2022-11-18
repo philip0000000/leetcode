@@ -16,14 +16,61 @@ https://app.codility.com/programmers/trainings/
 
 
 
+
+
+
+
+
+
+
+
+
 var Found = new System.Collections.Generic.List<int>();
 Found.Add(A[n]);
 
 
 var Dic = new System.Collections.Generic.Dictionary<int, int>();
 Dic.Add(n, 1);
+foreach(int n in A)
+{
+    if (NumDic.ContainsKey(n))
+        NumDic[n]++;
+    else
+        NumDic.Add(n, 1);
+}
+
 foreach(var item in Dic)
 {
     if (item.Value == 1)
         return item.Key;
 }
+
+
+
+Speed:
+HashSet > List
+
+HashSet<T> Use is to store a series of unique values
+HashSet.Add(n) // Add return false if the element is already present
+
+List<T> by default for managing lists of items.
+Collection<T> use if you need to expose this list publicly.
+Dictionary<K, V> Use when you need to store values based upon some unique key.
+
+
+
+
+
+---string---
+new StringBuilder
+s.IsLetterOrDigit
+s.ToLower
+s.Append
+
+---array---
+arr.Length
+
+
+
+TODO: Dynamic Programming
+
