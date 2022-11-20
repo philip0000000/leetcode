@@ -56,14 +56,9 @@ public class Solution {
         int[] ans = new int[n];
         int MaxBits = NumberOfBits(n);
 
-        bool AddOne;
-        int count;
         int Seperation = 1;
         for (int m = 0; m < MaxBits; m++)
         {
-            AddOne = false;
-            count = 0;
-            
             int i = 0;
             while (i < n)
             {
@@ -81,9 +76,9 @@ public class Solution {
                         i++;
                     }
                 }
-                else // for last bits
+                else
                 {
-                    while (i < k)
+                    while (i < k) // do only at end, will only be executed 1 time
                     {
                         if (i < n)
                             ans[i]++;
