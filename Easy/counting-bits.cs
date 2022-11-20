@@ -58,24 +58,42 @@ public class Solution {
 
         bool AddOne;
         int count;
+        int Seperation = 1;
         for (int m = 0; m < MaxBits; m++)
         {
             AddOne = false;
             count = 0;
-            int Seperation = 1 << m; // 2^m
-            Console.WriteLine(Seperation);
-            for (int i = 0; i < n; i++)
+            
+            int i = 0;
+            while (i < n)
             {
-                if (count >= Seperation)
-                {
-                    count = 0;
-                    AddOne = !AddOne; // flip value to add/not add
-                }
+                // add Seperation (do nothing X Seperation times)
+                i += Seperation; // Seperation + Seperation
 
-                if (AddOne == true)
-                    ans[i]++;
-                count++;
+                // loop "Seperation" times
+                // add X Seperation 1s
+                int k = i + Seperation;
+                if (k < n)
+                {
+                    while (i < k)
+                    {
+                        ans[i]++;
+                        i++;
+                    }
+                }
+                else // for last bits
+                {
+                    while (i < k)
+                    {
+                        if (i < n)
+                            ans[i]++;
+                        else
+                            break;
+                        i++;
+                    }
+                }
             }
+            Seperation <<= 1;
         }
 
         return ans;
