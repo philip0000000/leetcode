@@ -29,21 +29,6 @@ var Found = new System.Collections.Generic.List<int>();
 Found.Add(A[n]);
 
 
-var Dic = new System.Collections.Generic.Dictionary<int, int>();
-Dic.Add(n, 1);
-foreach(int n in A)
-{
-    if (NumDic.ContainsKey(n))
-        NumDic[n]++;
-    else
-        NumDic.Add(n, 1);
-}
-
-foreach(var item in Dic)
-{
-    if (item.Value == 1)
-        return item.Key;
-}
 
 
 
@@ -63,13 +48,34 @@ Dictionary<K, V> Use when you need to store values based upon some unique key.
 
 ---string---
 new StringBuilder
+s.Length;
 s.IsLetterOrDigit
 s.ToLower
 s.Append
 
 ---array---
 arr.Length
+int[] cars = new int[4];
 
+---list---
+l.Count
+
+---Dictionary---
+
+var Dic = new System.Collections.Generic.Dictionary<int, int>();
+Dic.Add(n, 1);
+foreach(int n in A)
+{
+    if (NumDic.ContainsKey(n))
+        NumDic[n]++;
+    else
+        NumDic.Add(n, 1);
+}
+foreach(var item in Dic)
+{
+    if (item.Value == 1)
+        return item.Key;
+}
 
 
 TODO: Dynamic Programming
