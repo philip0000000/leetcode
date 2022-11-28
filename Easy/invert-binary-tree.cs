@@ -35,21 +35,19 @@ public class Solution {
         {
             var Parent = new List<TreeNode>();
             Parent.Add(root);
-            var ParentTemp = new List<TreeNode>();
-            
             // get all values
             while (Parent.Count > 0)
             {
-                ParentTemp.Clear();
+                var ParentTemp = new List<TreeNode>();
                 for (int m = 0; m < Parent.Count; m++)
                 {
-                    (Parent[m].left, Parent[m].right) = (Parent[m].right, Parent[m].left); // invert the two child TreeNodes
+                    (Parent[m].left, Parent[m].right) = (Parent[m].right, Parent[m].left);
                     if (Parent[m].left != null)
                         ParentTemp.Add(Parent[m].left);
                     if (Parent[m].right != null)
                         ParentTemp.Add(Parent[m].right);
                 }
-                Parent = new List<TreeNode>(ParentTemp);
+                Parent = ParentTemp;
             }
         }
         return root;
