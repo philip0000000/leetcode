@@ -41,7 +41,7 @@ public class Solution {
                 var ParentTemp = new List<TreeNode>();
                 for (int m = 0; m < Parent.Count; m++)
                 {
-                    (Parent[m].left, Parent[m].right) = (Parent[m].right, Parent[m].left);
+                    (Parent[m].left, Parent[m].right) = (Parent[m].right, Parent[m].left); // invert the two child TreeNodes
                     if (Parent[m].left != null)
                         ParentTemp.Add(Parent[m].left);
                     if (Parent[m].right != null)
