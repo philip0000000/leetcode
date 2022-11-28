@@ -80,3 +80,8 @@ foreach(var item in Dic)
 
 TODO: Dynamic Programming
 
+
+
+---
+list.ForEach(i => Console.Write("{0}|", i));
+
