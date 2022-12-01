@@ -1,0 +1,30 @@
+===( Big-O )===
+https://aman.ai/code/asymptotic-notations/
+https://www.bigocheatsheet.com/
+
+TODO:
+https://aman.ai/
+https://neetcode.io/practice
+https://leetcode.com/list/e97a9e5m/       // SQL
+
+
+
+
+
+
+
+
+===( SQL )====================================
+SELECT 
+    select_list
+FROM 
+    table_name
+WHERE 
+    search_condition
+GROUP BY 
+    group_by_expression
+HAVING 
+    group_condition;
+
+
+
