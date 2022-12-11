@@ -8,11 +8,21 @@ https://neetcode.io/practice
 https://leetcode.com/list/e97a9e5m/       -- SQL
 
 
+Speed:
+HashSet > List
 
+---List & HashSet---
+.Contains() == [false, true]
+.Add(<T>)
 
-
-
-
+==============================================
+public int BinarySearch(int[] nums, int l, int r, int target)
+{
+    if (l > r) return -1;
+    int m = (l+r)/2;
+    return (nums[m] == target) ? m :
+           (nums[m] < target)  ? BinarySearch(nums, m + 1, r, target) : BinarySearch(nums, l, m - 1, target);
+}
 
 ===( SQL )====================================
 SELECT 
