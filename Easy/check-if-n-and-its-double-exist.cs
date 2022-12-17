@@ -18,7 +18,7 @@ for (int i = 0; i < arr.Length; i++)
 
 return false;
 
-// 3rd
+// 3rd...
 HashSet<int> seen = new HashSet<int>();
 foreach (int x in arr)
 {
