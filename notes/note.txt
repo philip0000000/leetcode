@@ -1,0 +1,35 @@
+===( Arrays & Hashing )===
+
+===( Two Pointers )===
+
+===( Sliding Window )===
+https://stackoverflow.com/questions/8269916/what-is-sliding-window-algorithm-examples
+
+===( Stack )===
+
+===( Binary Search )===
+
+===( Linked List )===
+
+===( Trees )===
+
+===( Heap / Priority Queue )===
+
+===( Backtracking )===
+
+===( Graphs )===
+
+===( Advanced Graphs )===
+===( 1-D Dynamic Programming )===
+
+===( 2-D Dynamic Programming )===
+
+===( Greedy )===
+
+===( Intervals )===
+
+===( Math & Geometry )===
+
+===( Bit Manipulation )===
+
+
