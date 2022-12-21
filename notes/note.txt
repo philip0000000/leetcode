@@ -4,6 +4,7 @@
 
 ===( Sliding Window )===
 https://stackoverflow.com/questions/8269916/what-is-sliding-window-algorithm-examples
+minimum-size-subarray-sum.cs
 
 ===( Stack )===
 
