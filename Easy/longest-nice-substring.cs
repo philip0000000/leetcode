@@ -31,9 +31,8 @@ public class Solution {
                 ValidStrs.Push(TestStr.Substring(n + 1)); // +1 to remove the bad token
                 ValidStrs.Push(TestStr.Substring(0, n));
             }
-            else if (TestStr.Length > 0)
+            else if (TestStr.Length > 0) // remove 1st token if string is not empty
                 ValidStrs.Push(TestStr.Remove(0, 1));
-                // remove 1st token if string is not empty
         }
         return retStr;
     }
