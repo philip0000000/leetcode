@@ -12,7 +12,7 @@ public class Solution {
             var ValidChar = new HashSet<char>(); // get all tokens in str
             foreach (var c in TestStr)
                 ValidChar.Add(c);
-            // split string in 2, if invalid token is found(not in both uper and lower case)
+            // split string in 2, if invalid token is found(not in both upper and lower case)
             int n = 0;
             while (n < TestStr.Length &&
                    ValidChar.Contains(Char.ToUpper(TestStr[n])) &&
