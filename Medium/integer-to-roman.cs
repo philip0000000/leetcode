@@ -73,9 +73,7 @@ public class Solution {
 
 // 2nd
 public class Solution {
-    public string IntToRoman(int num) {
-        string ret = "";
-        var RomanNrDict = new Dictionary<int, string>()
+    static readonly Dictionary<int, string> RomanNrDict = new Dictionary<int, string>()
         {
             { 1000, "M"},
             { 900, "CM"},
@@ -91,6 +89,8 @@ public class Solution {
             {4, "IV"},
             {1, "I"}
         };
+    public string IntToRoman(int num) {
+        string ret = "";
         foreach(KeyValuePair<int, string> entry in RomanNrDict)
         {
             while (num >= entry.Key)
