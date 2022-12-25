@@ -1,3 +1,4 @@
+// 1st
 public class Solution {
     public string IntToRoman(int num) {
         string ret = "";
@@ -65,6 +66,38 @@ public class Solution {
         {
             num -= 1;
             ret += 'I';
+        }
+        return ret;
+    }
+}
+
+// 2nd
+public class Solution {
+    public string IntToRoman(int num) {
+        string ret = "";
+        var RomanNrDict = new Dictionary<int, string>()
+        {
+            { 1000, "M"},
+            { 900, "CM"},
+            { 500, "D"},
+            { 400, "CD"},
+            { 100, "C"},
+            { 90, "XC"},
+            { 50, "L"},
+            {40, "XL"},
+            {10, "X"},
+            {9, "IX"},
+            {5, "V"},
+            {4, "IV"},
+            {1, "I"}
+        };
+        foreach(KeyValuePair<int, string> entry in RomanNrDict)
+        {
+            while (num >= entry.Key)
+            {
+                num -= entry.Key;
+                ret += entry.Value;
+            }
         }
         return ret;
     }
