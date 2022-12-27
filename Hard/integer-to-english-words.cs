@@ -41,7 +41,6 @@ public class Solution {
     public string NumberToWords(int num) {
         if (num == 0)
             return "Zero";
-        int orgin = num;
         string ret = "";
         int n = 0;
         while (num >= 1000000000)
@@ -190,7 +189,6 @@ public class Solution {
     public string NumberToWords(int num) {
         if (num == 0)
             return "Zero";
-        int orgin = num;
         string ret = "";
         int n = num / 1000000000;
         if (n > 0)
