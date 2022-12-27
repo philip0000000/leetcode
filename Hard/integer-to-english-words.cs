@@ -42,15 +42,12 @@ public class Solution {
         if (num == 0)
             return "Zero";
         string ret = "";
-        int n = 0;
-        while (num >= 1000000000)
-        {
-            num -= 1000000000;
-            n++;
-        }
+        int n = num / 1000000000;
         if (n > 0)
+        {
             ret = Digits[n] + " Billion";
-
+            num -= n * 1000000000;
+        }
         if (num >= 1000000)
         {
             n = num / 1000000;
