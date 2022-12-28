@@ -19,6 +19,7 @@ public class Solution {
                     flowerbed[i+1] == 0)
                 {
                     flowerbed[i] = 1;
+                    i++;
                     n--;
                     if (n < 1)
                         break;
@@ -39,6 +40,7 @@ public class Solution {
                 (i == flowerbed.Length - 1 || flowerbed[i + 1] == 0))
             {
                 flowerbed[i] = 1;
+                i++;
                 n--;
             }
         return n <= 0;
