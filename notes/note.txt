@@ -29,9 +29,5 @@ minimum-size-subarray-sum.cs
 
 ===( Intervals )===
 
-===( Math & Geometry )===
-
-===( Bit Manipulation )===
-
 ===( Big-O Complexity )===
 https://www.bigocheatsheet.com/
