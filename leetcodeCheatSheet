@@ -7,6 +7,10 @@ int myInt = 1337;
 string myString = myInt.ToString();
 myString[0];
 
+StringBuilder sb = new StringBuilder();
+sb.Append(num);
+int.Parse(sb.ToString());
+
 ===( Big-O )===
 https://aman.ai/code/asymptotic-notations/
 https://www.bigocheatsheet.com/
