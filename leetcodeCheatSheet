@@ -1,3 +1,12 @@
+// 1
+int[] myNumbers = {5, 1, 8, 9};
+Array.Sort(myNumbers);
+
+// 2
+int myInt = 1337;
+string myString = myInt.ToString();
+myString[0];
+
 ===( Big-O )===
 https://aman.ai/code/asymptotic-notations/
 https://www.bigocheatsheet.com/
