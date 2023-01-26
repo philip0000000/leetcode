@@ -11,6 +11,9 @@ StringBuilder sb = new StringBuilder();
 sb.Append(num);
 int.Parse(sb.ToString());
 
+// 3
+s.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
+
 ===( Big-O )===
 https://aman.ai/code/asymptotic-notations/
 https://www.bigocheatsheet.com/
