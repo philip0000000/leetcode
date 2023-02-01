@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/submissions/889424123/
 public class Solution {
     public int MinimumBuckets(string hamsters) {
         var sbHam = new StringBuilder(hamsters);
