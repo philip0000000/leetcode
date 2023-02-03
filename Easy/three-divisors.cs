@@ -1,3 +1,4 @@
+https://leetcode.com/problems/three-divisors/submissions/890700455/
 public class Solution {
     public bool IsThree(int n) {
         int divi = 0, m = (n/2)+1;
