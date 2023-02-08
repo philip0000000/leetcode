@@ -50,3 +50,22 @@ public class Solution {
         return profit;
     }
 }
+
+// new
+public class Solution {
+    public int MaxProfit(int[] prices) {
+        if (prices.Length == 1)
+            return 0;
+        int abs = -1;
+        int lowest = prices[0];
+        for (int i = 1; i < prices.Length; i++)
+        {
+            int tabs = prices[i] - lowest;
+            if (tabs > abs)
+                abs = tabs;
+            if (prices[i] < lowest)
+                lowest = prices[i];
+        }
+        return abs < 0 ? 0 : abs;
+    }
+}
