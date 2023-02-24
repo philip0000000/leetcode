@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/single-element-in-a-sorted-array/submissions/904204936/
+// https://leetcode.com/problems/single-element-in-a-sorted-array/submissions/904204936/ 50%~ did read banty discussion post
 public class Solution {
     public int SingleNonDuplicate(int[] nums) {
         int l = 0, r = nums.Length;
