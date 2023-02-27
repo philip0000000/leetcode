@@ -21,3 +21,23 @@ public class Solution {
         return ret;
     }
 }
+
+// 80%~
+public class Solution {
+    public int CountQuadruplets(int[] nums) {
+        int count=0;
+        for(int i=0;i<nums.Length-2;i++)
+        {
+            for(int j=i+1;j<nums.Length-1;j++)
+            {
+                for(int k=j+1;k<nums.Length;k++)
+                {
+                    for(int d=k+1;d<nums.Length;d++)
+                        if(nums[i]+nums[j]+nums[k]==nums[d])
+                            count++;
+                }
+            }
+        }
+        return count;
+    }
+}
