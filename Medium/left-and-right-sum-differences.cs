@@ -17,7 +17,7 @@ public class Solution {
     }
 }
 
-// 2nd 50%
+// 2nd 50%~
 public class Solution {
     public int[] LeftRigthDifference(int[] nums) {
         int rightSum = 0, leftSum = 0;
