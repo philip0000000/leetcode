@@ -1,3 +1,10 @@
+var arr = [];
+for (let i = 0; i < 100; i++) {
+  arr.push(Math.floor(Math.random() * 100) + 0);
+}
+console.log(arr.join(','));
+---
+
 // 1
 int[] myNumbers = {5, 1, 8, 9};
 Array.Sort(myNumbers);
