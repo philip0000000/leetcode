@@ -7,6 +7,6 @@ public class Solution {
             i++;
         while (i < arr.Length && arr[i-1] > arr[i])
             i++;
-        return i == arr.Length ? true : false;
+        return i == arr.Length;
     }
 }
